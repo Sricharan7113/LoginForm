@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="Stylesheet" href="style.css">
+    <link rel="icon" href="TitleIcon.png">
+    
+    <style>
+        /* To Be Pasted in Future */
+    </style>
+
+    <script src="script.js">
+        /* To Be Pasted in Future */
+    </script>
+
+</head>
+<body>
+    <div class="Container" id="Container">
+        <div class="SideBanner" id="SideBanner"></div>
+        <div class="FormContainer" id="FormContainer">
+            <img src="Monkey.png" class="BehaviorImg" id="BehaviorImg" width="20%"  onfocus="PasswordReveal(true)" onblur="PasswordReveal(false)">  
+            <form class="Form" id="Form" action="/login" method="POST">
+                <!-- Username Field -->
+                <div class="Label" id="Label">Email:
+                <input type="email" class="InputField" id="EmailField"  name="email" placeholder="Email"></div>
+                <!-- PasswordField -->
+                <div class="Label" id="Label">Password:
+                <input type="password" class="InputField" id="PasswordField" name="password" placeholder="Password" onfocus="SwapImage(true)" onblur="SwapImage(false)" ></div>
+                <!-- Submit Button -->
+                <input type="submit" class="SubmitBtn Btn" id="SubmitBtn" value="Login">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
